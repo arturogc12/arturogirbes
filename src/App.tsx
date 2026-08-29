@@ -19,15 +19,42 @@ const CheckItem = ({ children }: { children: React.ReactNode }) => {
 
 export default function LeadMagnetArticle() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [experience, setExperience] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (name && email && experience) {
-      setIsSubmitted(true);
-      window.scrollTo(0, 0);
+      setIsSubmitting(true);
+      try {
+        const response = await fetch('https://formspree.io/f/mljednkv', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, email, experience })
+        });
+        
+        if (response.ok) {
+          setIsSubmitted(true);
+          window.scrollTo(0, 0);
+        } else {
+          console.error("Error submitting form");
+          // Fallback just in case Formspree gives an error, still let them read it
+          setIsSubmitted(true);
+          window.scrollTo(0, 0);
+        }
+      } catch (error) {
+        console.error("Error connecting to formspree", error);
+        // Fallback for adblockers / network issues blocking formspree
+        setIsSubmitted(true);
+        window.scrollTo(0, 0);
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -65,9 +92,9 @@ export default function LeadMagnetArticle() {
                   <ChevronRight className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none rotate-90" />
                 </div>
               </div>
-              <button type="submit" className="w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-black text-white px-6 py-4 rounded font-semibold text-base transition-all mt-8">
-                <span>Desbloquear artículo completo y framework</span>
-                <ArrowRight className="w-4 h-4" />
+              <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-black text-white px-6 py-4 rounded font-semibold text-base transition-all mt-8 disabled:opacity-70 disabled:cursor-not-allowed">
+                <span>{isSubmitting ? 'Desbloqueando...' : 'Desbloquear artículo completo y framework'}</span>
+                {!isSubmitting && <ArrowRight className="w-4 h-4" />}
               </button>
               <div className="flex items-center justify-center space-x-2 mt-6 text-xs text-slate-500 font-medium">
                 <ShieldCheck className="w-4 h-4" />
