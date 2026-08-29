@@ -1,0 +1,6 @@
+{
+  "name": "Small & Mid-Caps Framework",
+  "description": "Lead magnet landing page and financial article for small and mid-caps investing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
