@@ -518,14 +518,11 @@ export default function LeadMagnetArticle() {
                   src="/1784747655356.jfif" 
                   alt="Arturo Girbés" 
                   className="w-20 h-20 rounded-full object-cover border border-slate-300"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150&h=150';
-                  }}
                 />
               </div>
               <div className="flex-1 text-center sm:text-left">
                 <p className="text-sm text-slate-800 font-bold mb-4">
-                  Arturo Girbés <span className="font-normal text-slate-500">— Análisis de capital y gestión de cartera en valores de alto crecimiento</span>
+                  Arturo Girbés <span className="font-normal text-slate-500">| Gestión de Cartera en Small-Caps</span>
                 </p>
                 <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900 mb-3">
                   ¿Gestionas una cartera de Small & Mid-Caps y quieres auditar tu gestión de riesgo?
