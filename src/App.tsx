@@ -483,6 +483,46 @@ export default function LeadMagnetArticle() {
               En este segmento del mercado, el potencial alcista puede ser extraordinario, pero solo si el dimensionamiento de las posiciones, la disciplina en la valoración y el seguimiento de las tesis se gestionan con el mismo rigor que la selección de empresas.
             </p>
           </div>
+
+          <div className="mt-24 p-8 sm:p-10 bg-slate-50 border border-slate-200 rounded text-slate-900 font-sans shadow-sm">
+            <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+              <div className="flex-shrink-0">
+                <img 
+                  src="/1784747655356.jfif" 
+                  alt="Arturo Girbés" 
+                  className="w-20 h-20 rounded-full object-cover border border-slate-300"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150&h=150';
+                  }}
+                />
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <p className="text-sm text-slate-800 font-bold mb-4">
+                  Arturo Girbés <span className="font-normal text-slate-500">— Análisis de capital y gestión de cartera en valores de alto crecimiento</span>
+                </p>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900 mb-3">
+                  ¿Gestionas una cartera de Small & Mid-Caps y quieres auditar tu gestión de riesgo?
+                </h3>
+                <p className="text-slate-600 text-base mb-6 leading-relaxed">
+                  Dar con buenas empresas es solo la mitad del trabajo. Si quieres revisar el dimensionamiento de tus posiciones actuales, fijar reglas claras de recorte o adaptar este framework a tu capital, podemos analizarlo juntos.
+                </p>
+                
+                <a 
+                  href="https://calendly.com/arturogirbes/20min" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-2 bg-slate-900 text-white hover:bg-slate-800 px-6 py-3.5 rounded font-semibold text-sm transition-colors w-full sm:w-auto"
+                >
+                  <span>📲 Agendar sesión de análisis de 20 min (Gratuita)</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                
+                <p className="text-xs text-slate-500 mt-4 leading-relaxed max-w-lg mx-auto sm:mx-0">
+                  Sesiones individuales de 20 minutos orientadas a inversores activos o carteras en fase de construcción.
+                </p>
+              </div>
+            </div>
+          </div>
         </article>
       </main>
     </div>
