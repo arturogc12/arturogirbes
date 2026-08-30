@@ -75,9 +75,7 @@ export default function LeadMagnetArticle() {
                 <p className="text-xs text-slate-500 font-normal">Gestión de Cartera en Small-Caps</p>
               </div>
             </div>
-            <div className="hidden sm:flex items-center space-x-2 text-xs font-medium text-slate-600 border border-slate-200 bg-slate-50 px-3 py-1 rounded">
-              <span>Framework Estratégico</span>
-            </div>
+          
           </div>
         </header>
 
@@ -102,23 +100,12 @@ export default function LeadMagnetArticle() {
                 </p>
               </div>
 
-              {/* Fila Autor / Lectura */}
-              <div className="flex items-center space-x-3.5 py-3 border-y border-slate-200 text-xs text-slate-600">
-                <img 
-                  src="/1784747655356.jfif" 
-                  alt="Arturo Girbés" 
-                  className="w-10 h-10 rounded-full object-cover border border-slate-200 shrink-0"
-                />
-                <div>
-                  <p className="font-semibold text-slate-900">Por Arturo Girbés</p>
-                  <p className="text-slate-500">12 min de lectura técnica • Incluye ratios, reglas de salida y checklist</p>
-                </div>
-              </div>
+  
 
               {/* Puntos de Valor Clave */}
               <div className="space-y-4">
                 <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-                  Puntos clave del framework:
+                  Puntos clave de la estrategia:
                 </h2>
                 
                 <div className="space-y-3">
@@ -239,7 +226,7 @@ export default function LeadMagnetArticle() {
                       <Lock className="w-4 h-4" />
                     </div>
                     <h2 className="text-xl sm:text-2xl font-bold font-serif text-slate-900 tracking-tight">
-                      Accede al Framework Completo
+                      Accede al Marco de Trabajo Completo
                     </h2>
                     <p className="text-xs sm:text-sm text-slate-500 font-normal leading-relaxed">
                       Introduce tus datos para desbloquear el ensayo completo, las reglas cuantitativas y la checklist interactiva.
@@ -305,7 +292,7 @@ export default function LeadMagnetArticle() {
                       disabled={isSubmitting} 
                       className="w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-black text-white font-semibold px-6 py-3.5 rounded text-sm transition-all disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer mt-6 shadow-sm"
                     >
-                      <span>{isSubmitting ? 'Verificando...' : 'Desbloquear artículo y framework'}</span>
+                      <span>{isSubmitting ? 'Verificando...' : 'Desbloquear artículo y la hoja de ruta'}</span>
                       {!isSubmitting && <ArrowRight className="w-4 h-4" />}
                     </button>
 
@@ -336,7 +323,7 @@ export default function LeadMagnetArticle() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800 font-serif pb-32">
-      <div className="bg-slate-50 border-b border-slate-200 text-slate-500 text-xs sm:text-sm font-sans py-2 text-center tracking-wide">
+      <div className="bg-slate-50 border-b border-slate-200 text-slate-500 text-xs sm:text-sm font-sans py-2 text-center tracking-wide print:hidden">
         Acceso desbloqueado con éxito.
       </div>
 
@@ -344,7 +331,7 @@ export default function LeadMagnetArticle() {
         <article>
           <header className="mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-8">
-              El Framework Completo de Gestión de Cartera en Small & Mid-Caps de Alto Crecimiento
+              La Guia Completa de Gestión de Cartera en Small & Mid-Caps de Alto Crecimiento
             </h1>
             <div className="flex items-center space-x-4 text-sm text-slate-500 font-sans border-b border-slate-200 pb-8 uppercase tracking-wider">
               <span>Estrategia Avanzada</span>
@@ -738,7 +725,19 @@ export default function LeadMagnetArticle() {
             </p>
           </div>
 
-          <div className="mt-24 p-8 sm:p-10 bg-slate-50 border border-slate-200 rounded text-slate-900 font-sans shadow-sm">
+          <div className="mt-16 flex flex-col items-center justify-center border-t border-slate-200 pt-12 print:hidden">
+            <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Guarda este documento para tu referencia</h3>
+            <p className="text-sm text-slate-600 mb-6 text-center max-w-md">Descarga el artículo completo y la checklist en formato PDF para leerlo o imprimirlo cuando quieras.</p>
+            <button 
+              onClick={() => window.print()}
+              className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 px-6 py-3 rounded font-semibold text-sm transition-colors shadow-sm"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-down"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M12 18v-6"/><path d="M9 15l3 3 3-3"/></svg>
+              <span>Descargar Artículo en PDF</span>
+            </button>
+          </div>
+
+          <div className="mt-16 p-8 sm:p-10 bg-slate-50 border border-slate-200 rounded text-slate-900 font-sans shadow-sm print:hidden">
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
               <div className="flex-shrink-0">
                 <img 
@@ -755,7 +754,7 @@ export default function LeadMagnetArticle() {
                   ¿Gestionas una cartera de Small & Mid-Caps y quieres auditar tu gestión de riesgo?
                 </h3>
                 <p className="text-slate-600 text-base mb-6 leading-relaxed">
-                  Dar con buenas empresas es solo la mitad del trabajo. Si quieres revisar el dimensionamiento de tus posiciones actuales, fijar reglas claras de recorte o adaptar este framework a tu capital, podemos analizarlo juntos.
+                  Dar con buenas empresas es solo la mitad del trabajo. Si quieres revisar el dimensionamiento de tus posiciones actuales, fijar reglas claras de recorte o adaptar este marco de trabajo a tu capital, podemos analizarlo juntos.
                 </p>
                 
                 <a 
