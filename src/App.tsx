@@ -182,46 +182,46 @@ export default function LeadMagnetArticle() {
                   </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">01.</span>
-                    <span>El error de mirar solo la selección</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-700">
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">01.</span>
+                    <span className="leading-snug">El principio fundamental: Comprar cuando la tesis mejora más rápido que la cotización</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">02.</span>
-                    <span>Concentración y tamaño de posición</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">02.</span>
+                    <span className="leading-snug">Que una acción suba un 100%, 300% o 500% cambia el nivel de exigencia</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">03.</span>
-                    <span>Entradas en 3 tramos sucesivos</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">03.</span>
+                    <span className="leading-snug">Cómo entrar en small-caps de crecimiento tras una fuerte subida</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">04.</span>
-                    <span>Rebalanceo por peso de cartera</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">04.</span>
+                    <span className="leading-snug">Qué convierte a una small-cap en una oportunidad de compra</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">05.</span>
-                    <span>Tolerancia al drawdown y volatilidad</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">05.</span>
+                    <span className="leading-snug">Cuándo recortar posición: El arte de no recortar tus mejores valores antes de tiempo</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">06.</span>
-                    <span>Auditoría de Deuda, Caja y Dilución</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">06.</span>
+                    <span className="leading-snug">Cuándo vender por completo</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">07.</span>
-                    <span>Criterios no negociables de salida</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">07.</span>
+                    <span className="leading-snug">Correcciones: Cuándo promediar al alza/abajo vs. cuándo cortar pérdidas</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">08.</span>
-                    <span>Checklist interactiva de decisión</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">08.</span>
+                    <span className="leading-snug">Lista de comprobación práctica (Comprar / Recortar / Vender)</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">09.</span>
-                    <span>Psicología en valores ilíquidos</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">09.</span>
+                    <span className="leading-snug">La mentalidad adecuada</span>
                   </div>
-                  <div className="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                    <span className="text-slate-400 font-mono">10.</span>
-                    <span>La regla final de capital</span>
+                  <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
+                    <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">10.</span>
+                    <span className="leading-snug">La regla final</span>
                   </div>
                 </div>
               </div>
