@@ -1,11 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
 @layer base {
   html {
     font-family: 'Inter', sans-serif;
   }
   h1, h2, h3, h4, h5, h6, .font-serif {
     font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .break-after-avoid {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}
+
+@media print {
+  /* Prevent cutting text blocks in half during PDF generation */
+  #article-content p, 
+  #article-content li, 
+  #article-content h1,
+  #article-content h2,
+  #article-content h3,
+  #article-content blockquote {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Styles specifically for the generated PDF */
+  #article-content {
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+  #article-content p,
+  #article-content li {
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8pt !important;
+  }
+  #article-content h1 {
+    font-size: 22pt !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16pt !important;
+    margin-top: 0 !important;
+  }
+  #article-content h2 {
+    font-size: 16pt !important;
+    line-height: 1.3 !important;
+    margin-top: 24pt !important;
+    margin-bottom: 12pt !important;
+  }
+  #article-content h3 {
+    font-size: 14pt !important;
+    line-height: 1.3 !important;
+    margin-top: 16pt !important;
+    margin-bottom: 8pt !important;
+  }
+  #article-content .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 12pt !important;
+  }
+  #article-content .mt-20 {
+    margin-top: 24pt !important;
+  }
+  #article-content .mb-8 {
+    margin-bottom: 12pt !important;
+  }
+  #article-content .text-lg,
+  #article-content .text-base {
+    font-size: 12pt !important;
+  }
+  
+  @page {
+    margin: 15mm;
   }
 }

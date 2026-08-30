@@ -323,12 +323,12 @@ export default function LeadMagnetArticle() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800 font-serif pb-32">
-      <div className="bg-slate-50 border-b border-slate-200 text-slate-500 text-xs sm:text-sm font-sans py-2 text-center tracking-wide print:hidden">
+      <div data-html2canvas-ignore="true" className="bg-slate-50 border-b border-slate-200 text-slate-500 text-xs sm:text-sm font-sans py-2 text-center tracking-wide print:hidden">
         Acceso desbloqueado con éxito.
       </div>
 
       <main className="max-w-3xl mx-auto px-5 sm:px-8 py-12 sm:py-20">
-        <article>
+        <article id="article-content">
           <header className="mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-8">
               La Guia Completa de Gestión de Cartera en Small & Mid-Caps de Alto Crecimiento
@@ -373,7 +373,7 @@ export default function LeadMagnetArticle() {
             </p>
           </div>
 
-          <nav className="bg-slate-50 border border-slate-200 p-6 sm:p-8 my-16 font-sans text-sm">
+          <nav className="bg-slate-50 border border-slate-200 p-6 sm:p-8 my-16 font-sans text-sm break-inside-avoid">
             <h3 className="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Índice de contenidos</h3>
             <ul className="space-y-4 list-none pl-0">
                {[
@@ -531,7 +531,7 @@ export default function LeadMagnetArticle() {
             </p>
             <p>Existen tres motivos principales para reducir una posición:</p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-4">Motivo 1: El peso de la posición se vuelve excesivo</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-6">Motivo 1: El peso de la posición se vuelve excesivo</h3>
             <p>Es la razón más objetiva para recortar.</p>
             <p>Si una posición pasa del 5% al 15% de tu cartera, es una excelente noticia. Si llega al 30%-40%, la cartera pierde su diversificación y pasa a depender de un único activo. Para una cartera concentrada de small-caps, este es un marco razonable:</p>
             
@@ -546,7 +546,7 @@ export default function LeadMagnetArticle() {
               Esto no se hace porque la empresa haya empeorado, sino porque la concentración altera el perfil de riesgo global. Una posición racional al 8% puede ser una imprudencia al 38%. Al mercado le es indiferente cuál fue tu precio medio de compra; el riesgo de tu cartera se calcula sobre la valoración actual.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-4">Motivo 2: La cotización supera a la ejecución operativa</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-6">Motivo 2: La cotización supera a la ejecución operativa</h3>
             <p>
               Esto ocurre con frecuencia en valores de pequeña capitalización. La narrativa capta la atención de los inversores antes de dominar el mercado real. La acción se dispara y la valoración empieza a descontar varios años de ejecución impecable.
             </p>
@@ -563,7 +563,7 @@ export default function LeadMagnetArticle() {
               En estas circunstancias, reducir entre un 10% y un 30% la posición es una decisión prudente. No significa dar por muerta la tesis, sino reconocer que el precio actual descuenta una certeza excesiva.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-4">Motivo 3: Existe un mejor uso para el capital dentro de la cartera</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-6">Motivo 3: Existe un mejor uso para el capital dentro de la cartera</h3>
             <p>
               Cada posición debe competir por el capital disponible. Un activo puede seguir siendo atractivo, pero ser menos eficiente en términos de riesgo/beneficio que otra oportunidad de la cartera.
             </p>
@@ -609,7 +609,7 @@ export default function LeadMagnetArticle() {
               En empresas de pequeña capitalización, las correcciones son inevitables. Lo importante es distinguir entre el deterioro del precio y el deterioro de la tesis.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-4">Es oportuno añadir posición si:</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-6">Es oportuno añadir posición si:</h3>
             <ul className="list-disc pl-6 space-y-2 mb-8">
               <li className="pl-2">La cotización cae pero los fundamentales mejoran.</li>
               <li className="pl-2">Los ingresos y la cartera de pedidos siguen creciendo.</li>
@@ -620,7 +620,7 @@ export default function LeadMagnetArticle() {
               <li className="pl-2">La valoración se vuelve sustancialmente más atractiva.</li>
             </ul>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-4">Evita promediar a la baja si:</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-12 mb-6">Evita promediar a la baja si:</h3>
             <ul className="list-disc pl-6 space-y-2 mb-8">
               <li className="pl-2">La empresa incumple hitos operativos clave.</li>
               <li className="pl-2">Se recortan las previsiones de negocio.</li>
@@ -703,6 +703,7 @@ export default function LeadMagnetArticle() {
               Los inversores avanzados son pacientes sin caer en la obstinación, decididos sin ser imprudentes y analíticos sin dejarse llevar por narrativas promocionales. Entienden que una cartera no se construye operando a diario, pero tampoco manteniendo cualquier activo de forma ciega e indefinida.
             </p>
 
+            <div className="html2pdf__page-break"></div>
             <h2 id="sec-10" className="text-2xl sm:text-3xl font-bold text-slate-900 mt-20 mb-8 scroll-mt-12">
               10. La regla final
             </h2>
@@ -725,11 +726,15 @@ export default function LeadMagnetArticle() {
             </p>
           </div>
 
-          <div className="mt-16 flex flex-col items-center justify-center border-t border-slate-200 pt-12 print:hidden">
+          <div data-html2canvas-ignore="true" className="mt-16 flex flex-col items-center justify-center border-t border-slate-200 pt-12 print:hidden">
             <h3 className="text-lg font-serif font-bold text-slate-900 mb-2">Guarda este documento para tu referencia</h3>
             <p className="text-sm text-slate-600 mb-6 text-center max-w-md">Descarga el artículo completo y la checklist en formato PDF para leerlo o imprimirlo cuando quieras.</p>
             <button 
-              onClick={() => window.print()}
+              onClick={() => {
+                document.getElementById('article-content')?.classList.add('pdf-mode');
+                window.print();
+                document.getElementById('article-content')?.classList.remove('pdf-mode');
+              }}
               className="inline-flex items-center justify-center space-x-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 px-6 py-3 rounded font-semibold text-sm transition-colors shadow-sm"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-down"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M12 18v-6"/><path d="M9 15l3 3 3-3"/></svg>
@@ -737,7 +742,7 @@ export default function LeadMagnetArticle() {
             </button>
           </div>
 
-          <div className="mt-16 p-8 sm:p-10 bg-slate-50 border border-slate-200 rounded text-slate-900 font-sans shadow-sm print:hidden">
+          <div data-html2canvas-ignore="true" className="mt-16 p-8 sm:p-10 bg-slate-50 border border-slate-200 rounded text-slate-900 font-sans shadow-sm print:hidden">
             <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
               <div className="flex-shrink-0">
                 <img 
