@@ -104,7 +104,7 @@ export default function LeadMagnetArticle() {
 
               {/* Puntos de Valor Clave */}
               <div className="space-y-4">
-                <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400">
                   Puntos clave de la estrategia:
                 </h2>
                 
@@ -112,8 +112,8 @@ export default function LeadMagnetArticle() {
                   <div className="flex items-start space-x-3 p-4 bg-white border border-slate-200 rounded text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-900 mt-2 shrink-0"></span>
                     <div>
-                      <h3 className="text-sm font-semibold text-slate-900">La Regla del 5% - 8% de Asignación Máxima</h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <h3 className="text-base font-semibold text-slate-900">La Regla del 5% - 8% de Asignación Máxima</h3>
+                      <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
                         Cómo capturar multiplicadores en valores de alto crecimiento sin arriesgar la supervivencia global de la cartera.
                       </p>
                     </div>
@@ -122,8 +122,8 @@ export default function LeadMagnetArticle() {
                   <div className="flex items-start space-x-3 p-4 bg-white border border-slate-200 rounded text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-900 mt-2 shrink-0"></span>
                     <div>
-                      <h3 className="text-sm font-semibold text-slate-900">Entrada Progresiva en 3 Tramos (1/3 por Hito)</h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <h3 className="text-base font-semibold text-slate-900">Entrada Progresiva en 3 Tramos (1/3 por Hito)</h3>
+                      <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
                         Validar la ejecución del equipo directivo antes de comprometer el 100% del capital asignado a la tesis.
                       </p>
                     </div>
@@ -132,8 +132,8 @@ export default function LeadMagnetArticle() {
                   <div className="flex items-start space-x-3 p-4 bg-white border border-slate-200 rounded text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-900 mt-2 shrink-0"></span>
                     <div>
-                      <h3 className="text-sm font-semibold text-slate-900">Criterios de Recorte y Venta Disciplinada</h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <h3 className="text-base font-semibold text-slate-900">Criterios de Recorte y Venta Disciplinada</h3>
+                      <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
                         Reglas claras para recortar posiciones ganadoras cuando el precio se adelanta a los fundamentales.
                       </p>
                     </div>
@@ -142,8 +142,8 @@ export default function LeadMagnetArticle() {
                   <div className="flex items-start space-x-3 p-4 bg-white border border-slate-200 rounded text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-900 mt-2 shrink-0"></span>
                     <div>
-                      <h3 className="text-sm font-semibold text-slate-900">Filtros Cuantitativos No Negociables</h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <h3 className="text-base font-semibold text-slate-900">Filtros Cuantitativos No Negociables</h3>
+                      <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
                         Parámetros críticos de Runway de caja, Deuda Neta y riesgo de dilución para descartar trampas de valor.
                       </p>
                     </div>
@@ -152,8 +152,8 @@ export default function LeadMagnetArticle() {
                   <div className="flex items-start space-x-3 p-4 bg-white border border-slate-200 rounded text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-slate-900 mt-2 shrink-0"></span>
                     <div>
-                      <h3 className="text-sm font-semibold text-slate-900">Checklist Interactiva de Decisión</h3>
-                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <h3 className="text-base font-semibold text-slate-900">Checklist Interactiva de Decisión</h3>
+                      <p className="text-sm text-slate-600 mt-1.5 leading-relaxed">
                         6 preguntas de verificación previa que debes responder antes de enviar cualquier orden de compra.
                       </p>
                     </div>
@@ -164,12 +164,12 @@ export default function LeadMagnetArticle() {
               {/* Índice de Capítulos */}
               <div className="pt-6 border-t border-slate-200 space-y-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400">
                     Índice del ensayo (10 secciones):
                   </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-700">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
                   <div className="p-3 bg-white rounded border border-slate-200 flex items-start space-x-2.5">
                     <span className="text-slate-400 font-mono font-semibold shrink-0 mt-0.5">01.</span>
                     <span className="leading-snug">El principio fundamental: Comprar cuando la tesis mejora más rápido que la cotización</span>
@@ -357,7 +357,7 @@ export default function LeadMagnetArticle() {
               En el universo de las empresas de pequeña y mediana capitalización con fuerte expansión, la selección de valores representa solo la mitad del trabajo. El otro 50%, a menudo el más crítico, es la gestión del tamaño de las posiciones.
             </p>
             <p>
-              Los activos con mayor potencial son también los que entrañan un mayor riesgo estructural. Un valor que se multiplica por varios veces en tu cartera puede pasar a concentrar casi la mitad de tu capital sin que te des cuenta. Una tesis de inversión que era una ganga cuando la empresa cotizaba a un tamaño modesto puede perder todo su atractivo al alcanzar valoraciones exigentes. Del mismo modo, una promesa de crecimiento exponencial puede degenerar con el tiempo en una trampa de valor sin facturación real, emisiones continuas de acciones y pérdidas descontroladas.
+              Los activos con mayor potencial son también los que entrañan un mayor riesgo estructural. Un valor que se multiplica por varias veces en tu cartera puede pasar a concentrar casi la mitad de tu capital sin que te des cuenta. Una tesis de inversión que era una ganga cuando la empresa cotizaba a un tamaño modesto puede perder todo su atractivo al alcanzar valoraciones exigentes. Del mismo modo, una promesa de crecimiento exponencial puede degenerar con el tiempo en una trampa de valor sin facturación real, emisiones continuas de acciones y pérdidas descontroladas.
             </p>
             
             <p>
