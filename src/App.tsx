@@ -389,7 +389,14 @@ export default function LeadMagnetArticle() {
                  { id: 'sec-10', text: '10. La regla final' }
                ].map((item) => (
                  <li key={item.id}>
-                   <a href={`#${item.id}`} className="text-slate-600 hover:text-slate-900 underline decoration-slate-300 underline-offset-4 font-medium transition-colors">
+                   <a 
+                    href={`#${item.id}`} 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="text-slate-600 hover:text-slate-900 underline decoration-slate-300 underline-offset-4 font-medium transition-colors cursor-pointer"
+                  >
                      {item.text}
                    </a>
                  </li>
