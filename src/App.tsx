@@ -4,7 +4,10 @@ import { Lock, ArrowRight, ShieldCheck, ChevronRight, Check } from 'lucide-react
 const CheckItem = ({ children }: { children: React.ReactNode }) => {
   const [checked, setChecked] = useState(false);
   return (
-    <label className="flex items-start space-x-4 py-2 cursor-pointer group">
+    <label 
+      onClick={() => setChecked(!checked)}
+      className="flex items-start space-x-4 py-2 cursor-pointer group"
+    >
       <div className="relative flex items-center justify-center mt-1.5 flex-shrink-0">
         <div className={`w-4 h-4 border flex items-center justify-center transition-colors ${checked ? 'bg-slate-900 border-slate-900' : 'border-slate-400 bg-white group-hover:border-slate-600'}`}>
            {checked && <Check className="w-3 h-3 text-white" strokeWidth={3} />}

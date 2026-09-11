@@ -2,5 +2,7 @@
   "name": "Arturo Girbés | Gestión de Cartera en Small-Caps",
   "description": "Análisis de capital y gestión de cartera en valores de alto crecimiento.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
