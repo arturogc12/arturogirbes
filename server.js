@@ -21,8 +21,13 @@ app.post('/api/subscribe', async (request, response) => {
   }
 
   const subscriber = { email: email.trim() };
-  if (process.env.MAILERLITE_GROUP_ID) {
-    subscriber.groups = [process.env.MAILERLITE_GROUP_ID];
+  const groupIds = (process.env.MAILERLITE_GROUP_IDS || process.env.MAILERLITE_GROUP_ID || '')
+    .split(',')
+    .map((groupId) => groupId.trim())
+    .filter(Boolean);
+
+  if (groupIds.length > 0) {
+    subscriber.groups = groupIds;
   }
 
   try {
