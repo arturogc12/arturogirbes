@@ -57,8 +57,8 @@ export default function App() {
           <p>
             Si te sirve lo que lees, aplicas la idea. Si no, borras el correo y a otra cosa.
           </p>
-          <p className="text-gray-900 pt-1">
-            Escribe tu email abajo y mañana a primera hora tienes la <strong className="font-semibold text-gray-900">primera edición</strong> en tu bandeja de entrada.
+          <p className="pt-1">
+            Escribe tu email abajo y mañana a primera hora tienes la primera edición en tu bandeja de entrada.
           </p>
         </div>
 
