@@ -25,7 +25,15 @@ export default function App() {
         body: JSON.stringify({ email }),
       });
 
-      const result = await response.json();
+      const responseText = await response.text();
+      let result: { error?: string } = {};
+
+      try {
+        result = JSON.parse(responseText);
+      } catch {
+        throw new Error('El servidor de suscripciones no está conectado.');
+      }
+
       if (!response.ok) throw new Error(result.error || 'No se pudo completar la suscripción.');
 
       setStatus('success');
