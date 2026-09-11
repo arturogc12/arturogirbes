@@ -8,21 +8,32 @@ import { CheckCircle2, Loader2, Mail } from 'lucide-react';
 
 export default function App() {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    
-    // Cambiamos el estado a loading para simular el envío
-    setStatus('loading');
 
-    // Aquí iría la integración real (ej. MailerLite endpoint)
-    // Simulamos un retraso de red de 1.5s
-    setTimeout(() => {
+    setStatus('loading');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'No se pudo completar la suscripción.');
+
       setStatus('success');
       setEmail('');
-    }, 1500);
+    } catch (error) {
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'No se pudo completar la suscripción.');
+    }
   };
 
   return (
@@ -99,6 +110,12 @@ export default function App() {
                 )}
               </button>
             </form>
+          )}
+
+          {status === 'error' && (
+            <p className="text-sm text-red-600 mt-3" role="alert">
+              {errorMessage}
+            </p>
           )}
 
           {/* Micro-copy inferior */}
