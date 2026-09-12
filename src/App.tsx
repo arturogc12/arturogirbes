@@ -52,7 +52,7 @@ export default function App() {
         
         {/* Etiqueta Superior */}
         <span className="inline-block text-xs sm:text-sm font-semibold text-gray-500 tracking-wider uppercase mb-4 sm:mb-6">
-          La newsletter diaria de Arturo Girbes
+        MAÑANA TE CUENTO ALGO        
         </span>
 
         {/* Titular */}
