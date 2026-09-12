@@ -57,19 +57,18 @@ export default function App() {
 
         {/* Titular */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 leading-tight mb-5 sm:mb-6">
-          # <strong className="font-bold text-gray-900">Hay cosas que merece la pena no perderse</strong>
+          Hay cosas que empiezas a ver cuando llevas un tiempo pensando en dinero.
         </h1>
 
         {/* Cuerpo del Texto */}
         <div className="text-[15px] sm:text-base lg:text-lg text-gray-600 space-y-3.5 sm:space-y-4.5 leading-relaxed">
-          <p>Una empresa interesante.</p>
-          <p>Una noticia que merece atención.</p>
-          <p>Una inversión que estoy estudiando.</p>
-          <p>Una idea que no me saco de la cabeza.</p>
-          <p>Eso es lo que encontrarás aquí.</p>
-          <p><strong className="font-semibold text-gray-900">Historias, ideas y descubrimientos breves.</strong></p>
-          <p>Sin sermones. Sin informes interminables.</p>
-          <p><strong className="font-semibold text-gray-900">Menos de 2 minutos.</strong> Para leer con el café y llevarte algo en lo que pensar.</p>
+          <p>Una noticia que cambia cómo ves una empresa.</p>
+          <p>Una acción que merece una segunda mirada.</p>
+          <p>Una idea que te hace replantearte algo.</p>
+          <p>O una reflexión que se te queda dando vueltas.</p>
+          <p><strong className="font-semibold text-gray-900">De eso va esta newsletter.</strong></p>
+          <p>Sin sermones. Sin correos interminables.</p>
+          <p><strong className="font-semibold text-gray-900">Historias, ideas y descubrimientos breves.</strong> Menos de 2 minutos, mientras te tomas el café.</p>
           <p>Si te sirve, te quedas con la idea. Si no, borras el correo y a otra cosa.</p>
           <p><strong className="font-semibold text-gray-900">Deja tu email. Mañana empezamos.</strong></p>
         </div>
