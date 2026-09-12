@@ -57,25 +57,21 @@ export default function App() {
 
         {/* Titular */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 leading-tight mb-5 sm:mb-6">
-          **Mañana te voy a contar una empresa que probablemente no conozcas.**
+          # <strong className="font-bold text-gray-900">Hay cosas que merece la pena no perderse</strong>
         </h1>
 
         {/* Cuerpo del Texto */}
         <div className="text-[15px] sm:text-base lg:text-lg text-gray-600 space-y-3.5 sm:space-y-4.5 leading-relaxed">
-          <p>No porque sea una joya escondida.</p>
-          <p>Puede que ni siquiera lo sea.</p>
-          <p>Pero hay algo en sus números que me parece demasiado interesante como para ignorarlo.</p>
-          <p>Ese es el tipo de cosas que encontrarás aquí.</p>
-          <p><strong className="font-semibold text-gray-900">Bolsa. Dinero. Psicología.</strong></p>
-          <p>Pero contado como se lo contaría a un amigo tomando un café.</p>
-          <p>Sin informes interminables. Sin jerga complicada.</p>
-          <p>Sin intentar parecer más inteligente de lo que soy.</p>
-          <p>Solo <strong className="font-semibold text-gray-900">ideas interesantes, errores reales y alguna inversión que merece una segunda mirada.</strong></p>
-          <p>Cada email tarda menos de 2 minutos en leerse.</p>
-          <p>Porque si necesito 20 minutos para explicarte una idea... Probablemente todavía no la entiendo bien.</p>
-          <p>Si quieres recibir la de mañana, deja tu email. Después ya decides si te quedas.</p>
-          <p>O me mandas a la carpeta de spam.</p>
-          <p>Las dos cosas me parecen razonables.</p>
+          <p>Una empresa interesante.</p>
+          <p>Una noticia que merece atención.</p>
+          <p>Una inversión que estoy estudiando.</p>
+          <p>Una idea que no me saco de la cabeza.</p>
+          <p>Eso es lo que encontrarás aquí.</p>
+          <p><strong className="font-semibold text-gray-900">Historias, ideas y descubrimientos breves.</strong></p>
+          <p>Sin sermones. Sin informes interminables.</p>
+          <p><strong className="font-semibold text-gray-900">Menos de 2 minutos.</strong> Para leer con el café y llevarte algo en lo que pensar.</p>
+          <p>Si te sirve, te quedas con la idea. Si no, borras el correo y a otra cosa.</p>
+          <p><strong className="font-semibold text-gray-900">Deja tu email. Mañana empezamos.</strong></p>
         </div>
 
         {/* Zona del Formulario */}
