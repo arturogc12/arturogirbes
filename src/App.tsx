@@ -70,7 +70,7 @@ export default function App() {
           <p>Sin sermones. Sin correos interminables.</p>
           <p><strong className="font-semibold text-gray-900">Historias, ideas y descubrimientos breves.</strong> Menos de 2 minutos, mientras te tomas el café.</p>
           <p>Si te sirve, te quedas con la idea. Si no, borras el correo y a otra cosa.</p>
-          <p><strong className="font-semibold text-gray-900">Deja tu email. Mañana empezamos.</strong></p>
+          <p><strong className="font-semibold text-gray-900">Deja tu email. En nada empezamos.</strong></p>
         </div>
 
         {/* Zona del Formulario */}
